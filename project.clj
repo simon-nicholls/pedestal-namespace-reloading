@@ -6,4 +6,7 @@
   :dependencies [[org.clojure/clojure "1.6.0"]
                  [io.pedestal/pedestal.service "0.3.1"]
                  [ns-tracker "0.2.2"]]
-  :deploy-repositories [["clojars" {:sign-releases false}]])
+  :deploy-repositories [["clojars" {:creds :gpg}]]
+  :scm {:name "git"
+        :url "http://github.com/simon-nicholls/pedestal-namespace-reloading"}
+  :signing {:gpg-key "simon@mintsource.org"})
